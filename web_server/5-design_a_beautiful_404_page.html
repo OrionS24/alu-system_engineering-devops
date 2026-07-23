@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>404 - Ceci n'est pas une page</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    font-family: 'Courier New', monospace;
+    color: #f5f5f5;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container { position: relative; }
+  .number {
+    font-size: 12rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shift 6s ease infinite;
+    background-size: 200% 200%;
+  }
+  @keyframes shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .pipe {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  .pipe span {
+    color: #4ade80;
+    font-weight: bold;
+    font-style: normal;
+  }
+  .home {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 0.7rem 1.6rem;
+    border: 2px solid #7873f5;
+    border-radius: 8px;
+    color: #7873f5;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .home:hover {
+    background: #7873f5;
+    color: #1e1e2f;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="number">404</div>
+    <div class="pipe">"<span>Ceci n'est pas une page</span>" &mdash; this is not a pipe, either.</div>
+    <a class="home" href="/">Take me home</a>
+  </div>
+</body>
+</html>
